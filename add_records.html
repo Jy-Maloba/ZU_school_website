@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD RECORDS</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        input[type=text] {
+        width: 100%;
+        padding: 7px ;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        }
+        input[type=submit] {
+        width: 100%;
+        padding: 9px;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        outline: none;
+        background-color:#0c6ddb;
+        color:white;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="nav">
+        <img src="assets/logo.jpg" alt="logo" class="logo"/>
+        <div class="nav-main">
+            <div class="upper">
+                <p class="name">ZETECH UNIVERSITY</p>
+                <p class="motto">Invent your future</p>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="students.php" >students</a></li>
+                <li><a href="courses.php" >Courses</a></li>
+                <li><a href="sports.php" >Sports</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div class="menu">
+            <ul>
+                <li><a href="add_records.html" >Add Records</a></li>
+                <li><a href="update.html" >update</a></li>
+                <li><a href="delete.html" >Delete Records</a></li>
+                
+            </ul>
+        </div>
+        <div class="content">
+        <div>
+            <h2 class="heading">Add Student Records</h2>
+        </div>
+
+        <div>
+            <form action="add_records.php" method="post" name="form_add">
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Sport</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="id"></td>
+                    <td><input type="text" name="f_name"></td>
+                    <td><input type="text" name="l_name"></td>
+                    <td><input type="text" name="email"></td>
+                    <td><input type="text" name="course"></td>
+                    <td><input type="text" name="sport"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Add Records"/></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+        <div>
+            <h2 class="heading">Add Course Records</h2>
+        </div>
+
+        <div>
+            <form action="course_records.php" method="post" name="form_add">
+            <table>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Department</th>
+                    <th>HOD</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="c_id"></td>
+                    <td><input type="text" name="c_name"></td>
+                    <td><input type="text" name="dept"></td>
+                    <td><input type="text" name="hod"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Add Records"/></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+        <div>
+            <h2 class="heading">Add Sports Records</h2>
+        </div>
+
+        <div>
+            <form action="sports_records.php" method="post" name="form_add">
+            <table>
+                <tr>
+                    <th>Sports ID</th>
+                    <th>Sport Name</th>
+                    <th>Head of Sport</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="s_id"></td>
+                    <td><input type="text" name="s_name"></td>
+                    <td><input type="text" name="hos"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Add Records"/></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete RECORDS</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        input[type=text] {
+        width: 100%;
+        padding: 7px ;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        }
+        input[type=submit] {
+        width: 50%;
+        padding: 9px;
+        margin: 5px 0;
+        border: 1px solid #000000;
+        outline: none;
+        background-color:#0c6ddb;
+        color:white;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="nav">
+        <img src="assets/logo.jpg" alt="logo" class="logo"/>
+        <div class="nav-main">
+            <div class="upper">
+                <p class="name">ZETECH UNIVERSITY</p>
+                <p class="motto">Invent your future</p>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="students.php" >students</a></li>
+                <li><a href="courses.php" >Courses</a></li>
+                <li><a href="sports.php" >Sports</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div class="menu">
+            <ul>
+                <li><a href="add_records.html" >Add Records</a></li>
+                <li><a href="update.html" >update</a></li>
+                <li><a href="delete.html" >Delete Records</a></li>
+                
+            </ul>
+        </div>
+        <div class="content">
+            <div>
+                <h1>Delete Student Record</h1>
+            </div>
+
+            <div class="delete">
+                <form action="delete_student.php" method="post" name="form_delete">
+                    <table>
+                        <tr>
+                            <td>Delete Row with ID</td>
+                            <td><input type="number" name="delete"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Delete"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div>
+                <h1>Delete Course Record</h1>
+            </div>
+
+            <div class="delete">
+                <form action="delete_course.php" method="post" name="form_delete">
+                    <table>
+                        <tr>
+                            <td>Delete Row with ID</td>
+                            <td><input type="text" name="delete"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Delete"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div>
+                <h1>Delete Sports Record</h1>
+            </div>
+
+            <div class="delete">
+                <form action="delete_sports.php" method="post" name="form_delete">
+                    <table>
+                        <tr>
+                            <td>Delete Row with ID</td>
+                            <td><input type="text" name="delete"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Delete"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
